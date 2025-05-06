@@ -787,31 +787,6 @@ body {
 }
 
 /* Responsive Design */
-
-@media (max-width: 768px) {
-    /* Ajusta la altura en móviles si es necesario */
-    .hero {
-        height: 80vh;
-    }
-    
-    /* Contenido del slide para móviles */
-    .slide-content {
-        left: 5% !important;
-        right: 5% !important;
-        bottom: 10% !important;
-        max-width: 90% !important;
-        padding: 20px !important;
-    }
-    
-    .slide-content h1 {
-        font-size: 1.8rem !important;
-    }
-    
-    .slide-content p {
-        font-size: 1rem !important;
-    }
-}
-
 @media (max-width: 1200px) {
     .proyecto-card {
         flex: 0 0 calc(50% - 20px);
@@ -839,29 +814,47 @@ body {
         padding: 0 40px;
     }
 
-    /* Nuevo ajuste para menú en tablets */
     nav {
         margin-left: 30px;
     }
 }
 
 @media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 10px 5%;
+        height: 70px;
+    }
+    
     .header-container {
         justify-content: space-between;
         padding: 15px 5%;
     }
 
     .logo-container {
-        margin-right: 0; /* Reset para móviles */
+        margin-right: 0;
     }
 
-    /* Menú móvil actualizado */
+    .logo-img {
+        height: 50px;
+    }
+    
+    .logo-text span:first-child {
+        font-size: 1.2rem;
+    }
+    
+    .logo-text span:last-child {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    /* Navigation */
     nav {
         position: fixed;
-        top: 130px; /* Ajustado por altura del header */
+        top: 70px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 130px);
+        height: calc(100vh - 70px);
         background-color: var(--primary-color);
         margin-left: 0;
         transition: left 0.3s ease;
@@ -873,79 +866,128 @@ body {
     }
 
     nav ul {
-        position: static;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         padding-top: 30px;
-        height: auto;
     }
 
     nav ul li {
         margin: 15px 0;
     }
 
-    .menu-toggle {
-        display: block;
-        order: 2; /* Para posicionar a la derecha */
+    nav ul li a {
+        font-size: 1.2rem;
+        padding: 10px 0;
     }
 
-    /* Ajustes de contenido */
+    .menu-toggle {
+        display: block;
+        order: 2;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 70vh;
+        margin-top: 70px;
+    }
+    
+    .carousel {
+        margin-top: 0;
+        height: 100%;
+    }
+    
     .slide-content {
-        left: 5%;
-        right: 5%;
-        max-width: none;
+        left: 5% !important;
+        right: 5% !important;
+        bottom: 10% !important;
+        max-width: 90% !important;
+        padding: 15px !important;
+    }
+    
+    .slide-content h1 {
+        font-size: 1.5rem !important;
+        margin-bottom: 10px;
+    }
+    
+    .slide-content p {
+        font-size: 0.9rem !important;
     }
     
     .carousel-controls {
-        bottom: 20px;
-        right: 20px;
+        bottom: 15px;
+        right: 15px;
     }
     
+    .carousel-controls button {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    /* General Sections */
     section {
-        padding: 80px 5%;
+        padding: 60px 5%;
     }
     
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    /* Services */
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .servicio-card {
+        padding: 30px 20px;
+    }
+    
+    .servicio-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    /* Projects */
     .proyecto-card {
         flex: 0 0 calc(100% - 20px);
     }
     
     .proyectos-carousel {
-        padding: 0 30px;
+        padding: 0 15px;
     }
     
     .carousel-btn {
         width: 40px;
         height: 40px;
     }
-}
 
-@media (max-width: 576px) {
-    /* Ajuste fino para el logo en móviles */
-    .logo-img {
-        height: 80px;
+    /* Contact */
+    .contacto-form {
+        padding: 25px 15px;
+    }
+    
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
     }
 
-    .logo-text span:first-child {
-        font-size: 1.3rem;
+    /* Preloader */
+    .preloader-logo {
+        width: 150px;
     }
-
-    .slide-content h1 {
+    
+    .preloader .logo-text span:first-child {
         font-size: 1.8rem;
     }
     
-    .slide-content p {
+    .preloader .logo-text span:last-child {
         font-size: 1rem;
     }
-    
-    .servicios-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .contacto-form {
-        padding: 30px 20px;
-    }
-    
+
+    /* Footer */
     .footer-content {
         flex-direction: column;
         gap: 30px;
@@ -954,25 +996,18 @@ body {
     .footer-links ul {
         align-items: center;
     }
-    
-    .proyectos-carousel {
-        padding: 0 20px;
-    }
 }
 
-@media (max-width: 768px) {
-    .preloader .logo-text span:first-child {
-        font-size: 3rem !important; /* Tamaño menor en móviles */
+@media (max-width: 576px) {
+    .logo-img {
+        height: 80px;
     }
-    .preloader .logo-text span:last-child {
-        font-size: 1.4rem !important;
+
+    .logo-text span:first-child {
+        font-size: 1.3rem;
     }
-}
-@media (max-width: 768px) {
-    .preloader-logo {
-        width: 80px; /* Logo más pequeño en móviles */
-    }
-    .preloader .logo-text span:first-child {
-        font-size: 2rem;
+
+    .proyectos-carousel {
+        padding: 0 20px;
     }
 }

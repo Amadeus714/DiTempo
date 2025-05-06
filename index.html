@@ -2,7 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Di Tempo Arquitectura</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -21,44 +25,46 @@
 
     <!-- Header -->
     <header>
-        <div class="logo-container">
-            <img src="imagenes/logoDiTempo.png" alt="Logo Di Tempo" class="logo-img">
-            <div class="logo-text">
-                <span>Di Tempo</span>
-                <span>Arquitectura</span>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="imagenes/logoDiTempo.png" alt="Logo Di Tempo" class="logo-img">
+                <div class="logo-text">
+                    <span>Di Tempo</span>
+                    <span>Arquitectura</span>
+                </div>
             </div>
-        </div>
 
-        <nav>
-            <ul>
-                <li><a href="#inicio" class="active">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="carousel">
-            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');">
                 <div class="slide-content">
                     <h1>Diseño Arquitectónico Contemporáneo</h1>
                     <p>Creando espacios que inspiran</p>
                 </div>
             </div>
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');">
                 <div class="slide-content">
                     <h1>Innovación en Cada Proyecto</h1>
                     <p>Más de siete décadas de experiencia</p>
                 </div>
             </div>
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');">
                 <div class="slide-content">
                     <h1>Optimización del Espacio</h1>
                     <p>Entornos amplios, funcionales y modernos</p>
@@ -116,7 +122,7 @@
             <p>Nuestro enfoque está puesto en la optimización del espacio, buscamos crear entornos amplios, funcionales y modernos, donde el diseño tenga un rol central. La experiencia se conjuga con una mirada fresca y actual, en una práctica donde el diálogo entre el espacio y la función logran enriquecer cada proyecto.</p>
         </div>
         <div class="nosotros-image">
-            <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Equipo de Di Tempo Arquitectura">
+            <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Equipo de Di Tempo Arquitectura">
         </div>
     </section>
 
@@ -126,7 +132,7 @@
         <div class="proyectos-carousel">
             <div class="proyectos-container">
                 <div class="proyecto-card">
-                    <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proyecto Nissan">
+                    <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Proyecto Nissan">
                     <div class="proyecto-info">
                         <h3>NISSAN Cabildo</h3>
                         <p>Diseño integral de concesionaria con showroom, áreas administrativas y talleres.</p>
@@ -134,7 +140,7 @@
                     </div>
                 </div>
                 <div class="proyecto-card">
-                    <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proyecto Due Torri">
+                    <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Proyecto Due Torri">
                     <div class="proyecto-info">
                         <h3>COMPLEJO DUE TORRI</h3>
                         <p>Desarrollo residencial de escala organizado en torno a dos torres con amenities.</p>
@@ -142,7 +148,7 @@
                     </div>
                 </div>
                 <div class="proyecto-card">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proyecto Mayling">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Proyecto Mayling">
                     <div class="proyecto-info">
                         <h3>VIVIENDA Country Mayling</h3>
                         <p>Vivienda unifamiliar de alta gama que combina amplitud, confort y diseño contemporáneo.</p>
@@ -150,7 +156,7 @@
                     </div>
                 </div>
                 <div class="proyecto-card">
-                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proyecto Habana">
+                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Proyecto Habana">
                     <div class="proyecto-info">
                         <h3>HABANA 3963 CABA</h3>
                         <p>Edificio residencial con diseño vanguardista en el corazón de Buenos Aires.</p>
@@ -158,7 +164,7 @@
                     </div>
                 </div>
                 <div class="proyecto-card">
-                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proyecto Nogoya">
+                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Proyecto Nogoya">
                     <div class="proyecto-info">
                         <h3>NOGOYA 2445 CABA</h3>
                         <p>Remodelación integral de edificio histórico con preservación de fachada.</p>
@@ -166,7 +172,7 @@
                     </div>
                 </div>
                 <div class="proyecto-card">
-                    <img src="https://images.unsplash.com/photo-1600607687920-7367e0e9b7f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proyecto Cuenca">
+                    <img src="https://images.unsplash.com/photo-1600607687920-7367e0e9b7f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Proyecto Cuenca">
                     <div class="proyecto-info">
                         <h3>CUENCA 3571 ESQ. NAVARRO CABA</h3>
                         <p>Modernización de espacio comercial con integración de tecnologías sustentables.</p>
@@ -233,10 +239,12 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <img src="imagenes/logoDiTempo.png" alt="Logo Di Tempo" class="logo-img">
-            <div class="footer-logo">
-                <span>Di Tempo</span>
-                <span>Arquitectura</span>
+            <div class="footer-logo-container">
+                <img src="imagenes/logoDiTempo.png" alt="Logo Di Tempo" class="logo-img">
+                <div class="footer-logo">
+                    <span>Di Tempo</span>
+                    <span>Arquitectura</span>
+                </div>
             </div>
 
             <div class="footer-links">
